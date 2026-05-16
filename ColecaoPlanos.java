@@ -11,6 +11,7 @@ public class ColecaoPlanos {
 
     public ColecaoPlanos(){
 
+        // fetche dos planos
         try{
             FileReader planos = new FileReader("Planos.txt");
             BufferedReader lerPlanos = new BufferedReader(planos);
@@ -29,10 +30,12 @@ public class ColecaoPlanos {
         }
     }
 
+    // retorna plano por id
     public Plano getPlano(int id){
         return hash.get(id);
     }
 
+    // print de todos os planos
     public void buscaPlanos(){
         Collection<Plano> planos = hash.values();
         for(Plano plano : planos){

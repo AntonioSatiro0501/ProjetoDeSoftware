@@ -16,7 +16,15 @@ public class Endereco{
         this.complemento = complemento;
     }
 
+    // gera string de dados para registro do protocolo
     public String geraConjuntoProtocolo(){
         return (Integer.toString(cep) + "_" + cidade + "_" + bairro + "_" + rua + "_" + Integer.toString(numeroResidencia) + "_" + complemento + "_");
+    }
+
+    // print de dados de endereco para report da entrega
+    public void printEndereco(){
+        System.out.println("CEP: " + cep);
+        System.out.println("Numero: " + numeroResidencia);
+        System.out.println("Complemento: " + complemento);
     }
 }

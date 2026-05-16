@@ -35,11 +35,15 @@ public class Fronteira{
             }
         }
 
+        int[] limites = controle.getLimites();
+
         for(int i = 0; i < 3; i++){
 
             switch(i){
                 case(0):
-
+                    System.out.println("-------------------");
+                    System.out.println("Limite frutas = " + limites[0]);
+                    System.out.println("-------------------\n");
                     while(true){
                         controle.printProdutoCategoria("fruta");
                         System.out.println("\nDigite o id do produto: ");
@@ -59,6 +63,9 @@ public class Fronteira{
                     }
                     break;
                 case(1):
+                    System.out.println("-------------------");
+                    System.out.println("Limite verduras = " + limites[1]);
+                    System.out.println("-------------------\n");
                     while(true){
                         controle.printProdutoCategoria("verdura");
                         System.out.println("\nDigite o id do produto: ");
@@ -78,6 +85,9 @@ public class Fronteira{
                     }
                     break;
                 case(2):
+                    System.out.println("-------------------");
+                    System.out.println("Limite legumes = " + limites[2]);
+                    System.out.println("-------------------\n");
                     while(true){
                         controle.printProdutoCategoria("legume");
                         System.out.println("\nDigite o id do produto: ");
@@ -144,7 +154,7 @@ public class Fronteira{
             System.out.println("\nDigite a agencia do cartao: ");
             String agencia = scanner.nextLine();
             if(controle.registraCartao(validade, cvv, numero, titular, agencia)){
-                System.out.println("\nPagamento realizado");
+                
                 break;
             } else {
                 System.out.println("\nCartao invalido");

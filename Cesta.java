@@ -14,6 +14,12 @@ public class Cesta {
         this.plano = plano;
     }
 
+    // retorna limites do plano
+    public int[] getLimites(){
+        int[] limites = {plano.getLimite("fruta"), plano.getLimite("verdura"), plano.getLimite("legume")};
+        return limites;
+    }
+
     // valida se quantidade de itens adicionados ou removidos é válido
     public boolean validaQuantidade(String categoria, int quantidade){
 
@@ -125,18 +131,22 @@ public class Cesta {
         }
     }
 
+    // retorna lista de itens
     public Hashtable<Integer, ItemProduto> getItems(){
         return items;
     }
 
+    // retorna id do plano
     public int getIdPlano(){
         return plano.getId();
     }
 
+    // retorna preço do plano
     public double getPrecoPlano(){
         return plano.getPreco();
     }
 
+    // print dos itens da cesta
     public void printItens(){
         System.out.println("----------------------------------");
         Collection<ItemProduto> itens = items.values();
@@ -146,6 +156,7 @@ public class Cesta {
         System.out.println("----------------------------------\n");
     }
 
+    // muda status da cesta
     public void mudaStatus(){
         status = "Aprovado";
     }
