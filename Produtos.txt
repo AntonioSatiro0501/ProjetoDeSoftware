@@ -1,0 +1,9 @@
+1234_Banana_12.43_fruta
+1254_Uva_21.32_fruta
+3213_Coco_3.21_fruta
+4421_Alface_4.50_verdura
+4422_Espinafre_6.75_verdura
+4423_Couve_5.20_verdura
+5531_Cenoura_7.10_legume
+5532_Batata_8.40_legume
+5533_Beterraba_6.95_legume
