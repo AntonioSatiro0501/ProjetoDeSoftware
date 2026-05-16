@@ -30,6 +30,7 @@ public class Plano {
         return nome;
     }
 
+    // retorna o limite de acordo com a categoria de produto
     public int getLimite(String categoria){
         
         switch(categoria){

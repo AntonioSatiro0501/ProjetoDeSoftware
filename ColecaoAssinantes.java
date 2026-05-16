@@ -12,6 +12,7 @@ public class ColecaoAssinantes {
 
     public ColecaoAssinantes(){
 
+        // fetche dos assinantes
         try{
             FileReader assinantes = new FileReader("Assinantes.txt");
             BufferedReader lerAssinantes = new BufferedReader(assinantes);
@@ -29,10 +30,12 @@ public class ColecaoAssinantes {
         }
     }
 
+    // retorna asssinante por numero se existir
     public Assinante getAssinante(String numero){
         return hash.get(numero);
     }
 
+    // registra novo assinante
     public void adicionarAssinante(Assinante assinante){
 
         try{

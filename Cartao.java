@@ -14,6 +14,7 @@ public class Cartao{
         this.agencia = agencia;
     }
 
+    // valida cartao
     public boolean validaCartao(){
         Operadora operadora = new Operadora();
         return operadora.validaCartao(validade, cvv, numero, titular, agencia);

@@ -7,10 +7,9 @@ import java.util.Random;
 
 public class GerenciadorProtocolos{
 
-    public GerenciadorProtocolos(){
+    public GerenciadorProtocolos(){}
 
-    }
-
+    // armazena novo protocolo e retorna o id
     public int armazenaProtocolo(Assinante assinante, Entrega entrega, Cesta cesta){
         try{
             

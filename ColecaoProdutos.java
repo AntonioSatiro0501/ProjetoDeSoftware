@@ -11,6 +11,7 @@ public class ColecaoProdutos {
 
     public ColecaoProdutos(){
 
+        // fetch dos produtos
         try{
             FileReader produtos = new FileReader("Produtos.txt");
             BufferedReader lerProdutos = new BufferedReader(produtos);
@@ -28,10 +29,13 @@ public class ColecaoProdutos {
             System.err.printf(e.getMessage());
         }
     }
+
+    // retorna um produto pelo id se existir
     public Produto getProduto(int id){
         return hash.get(id);
     }
 
+    // realiza print de todos os produtos de certa categoria
     public void printPorCategoria(String categoria){
         Collection<Produto> produtos = hash.values();
         for(Produto produto : produtos){

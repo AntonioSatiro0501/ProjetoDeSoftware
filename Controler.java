@@ -75,11 +75,18 @@ public class Controler {
         assinatura.definePagamento(metodo);
     }
 
+    // Registra cartao
     public boolean registraCartao(String validade, String cvv, String numero, String titular, String agencia){
         return assinatura.registraCartao(validade, cvv, numero, titular, agencia);
     }
 
+    // print dos itens da cesta
     public void printItens(){
         assinatura.printItens();
+    }
+
+    // retorna limites do plano
+    public int[] getLimites(){
+        return assinatura.getLimites();
     }
 }
